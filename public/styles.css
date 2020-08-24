@@ -1,0 +1,249 @@
+html {
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  /*text-align: center;*/
+}
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 4rem 1fr 3rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+a {
+  color: #8c7391;
+}
+header {
+  grid-area: "header";
+  background-color: #6c4675;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+header span {
+  font-size: 200%;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  grid-area: "main";
+}
+footer {
+  grid-area: "footer";
+  background-color: #282529;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main {
+  flex: 3 60rem;
+}
+.aside {
+  flex: 1 20rem;
+}
+.menus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.menus li {
+  flex: 0 1 12rem;
+  height: 16rem;
+  padding: 1rem;
+  margin: 0.3rem;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.menu span {
+  font-size: 500%;
+  text-align: center;
+}
+.menu h2,
+.menu p {
+  text-align: center;
+  color: #6c4675;
+}
+.menu-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-price div,
+.menu-price button {
+  text-align: center;
+}
+.menu-price div {
+  font-weight: bold;
+}
+button {
+  border: 0.1rem #b14fc7 solid;
+  background-color: transparent;
+}
+.button-add {
+  padding: 1rem;
+  border: 0.1rem #6c4675 solid;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  height: 5px;
+}
+button:hover {
+  border: 0.1rem #282529 solid;
+}
+.filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 0.1rem #8c7391 solid;
+}
+.filter div {
+  flex: 1;
+}
+select,
+input {
+  all: unset;
+  text-align-last: center;
+  border-bottom: 0.1rem #332735 solid;
+}
+select:hover,
+input:hover {
+  border-bottom: 0.1rem #b14fc7 solid;
+}
+.comanda {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+}
+.comanda-header {
+  border-bottom: 0.1rem #332735 solid;
+}
+.comanda-items {
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+.comanda span {
+  font-size: 3rem;
+}
+.comanda-items li {
+  display: flex;
+  align-items: center;
+}
+.comanda-items li div {
+  padding: 0.5rem;
+}
+.comanda-items li div:last-child {
+  flex: 1;
+}
+.right {
+  text-align: right;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.buttonFill {
+  background-color: #282529;
+  color: #8c7391;
+  padding: 0.5rem;
+}
+.total > div {
+  font-size: 1.3rem;
+}
+.total > div,
+.total > button {
+  flex: 1;
+}
+form {
+  width: 100%;
+}
+.form-container {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+.form-container li {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+input {
+  padding: 1rem;
+}
+.item-detail {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+}
+.item-box {
+  display: inherit;
+  margin: 0.5rem;
+  padding: 2rem;
+}
+
+.item-box-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-box-center span {
+  font-size: 8rem;
+  text-align: center;
+  margin: auto;
+}
+.item-detail-descrption {
+  flex: 1 1;
+}
+.notification-container {
+  font-size: 14px;
+  box-sizing: border-box;
+  position: fixed;
+  border: 0.1rem #b14fc7 solid;
+  background-color: #282529;
+  color: #fff;
+  opacity: 1;
+  transition: all 250ms linear;
+}
+.notification-hidden {
+  opacity: 0;
+  transition: all 250ms linear;
+}
+.top-right {
+  top: 12px;
+  right: 12px;
+  transition: transform 0.6s ease-in-out;
+  animation: toast-in-right 0.7s;
+}

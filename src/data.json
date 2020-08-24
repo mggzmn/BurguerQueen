@@ -1,0 +1,112 @@
+{
+  "menus": [
+    {
+      "_id": 1,
+      "emoji": "🍔",
+      "name": "Hamburguesa",
+      "stock": ["Res", "Pollo", "Vegetariana"],
+      "type": "Sencilla",
+      "price": 10.0,
+      "menu": "food"
+    },
+    {
+      "_id": 2,
+      "emoji": "🍔",
+      "name": "Hamburguesa",
+      "stock": ["Res", "Pollo", "Vegetariana"],
+      "type": "Doble",
+      "price": 15.9,
+      "menu": "food"
+    },
+    {
+      "_id": 3,
+      "emoji": "🍟",
+      "name": "Papas Fritas",
+      "stock": ["Acompañamiento"],
+      "type": "Extra",
+      "price": 0.5,
+      "menu": "food"
+    },
+    {
+      "_id": 4,
+      "emoji": "🧅",
+      "name": "Onion Rings",
+      "stock": ["Acompañamiento"],
+      "type": "Extra",
+      "price": 0.5,
+      "menu": "food"
+    },
+    {
+      "_id": 5,
+      "emoji": "🍶",
+      "name": "Agua",
+      "stock": ["Ciel", "Bonafont"],
+      "type": "500 ml",
+      "price": 5.0,
+      "menu": "food"
+    },
+    {
+      "_id": 6,
+      "emoji": "🧴",
+      "name": "Agua",
+      "stock": ["Ciel", "Bonafont", "Gugar"],
+      "type": "700 ml",
+      "price": 8.0,
+      "menu": "food"
+    },
+    {
+      "_id": 7,
+      "emoji": "🥤",
+      "name": "Refresco",
+      "stock": ["Manzana", "Sprite", "Fanta"],
+      "type": "500 ml",
+      "price": 7.0,
+      "menu": "food"
+    },
+    {
+      "_id": 8,
+      "emoji": " 🥃 ",
+      "name": "Refresco",
+      "stock": ["Manzana", "Sprite", "Fanta"],
+      "type": "700 ml",
+      "price": 10.0,
+      "menu": "food"
+    },
+    {
+      "_id": 9,
+      "emoji": "☕",
+      "name": "Café americano",
+      "stock": ["Nescafé", "Bola de Oro", "Café tostado"],
+      "type": "taza",
+      "price": 5.0,
+      "menu": "breakfast"
+    },
+    {
+      "_id": 10,
+      "emoji": "🥛",
+      "name": "Café c/leche",
+      "stock": ["Entera", "Semi", "Deslactosada"],
+      "type": "taza",
+      "price": 7.0,
+      "menu": "breakfast"
+    },
+    {
+      "_id": 11,
+      "emoji": "🧃",
+      "name": "Jugo",
+      "stock": ["Naranja"],
+      "type": "Vaso",
+      "price": 7.0,
+      "menu": "breakfast"
+    },
+    {
+      "_id": 12,
+      "emoji": "🥪",
+      "name": "Sándwich",
+      "stock": ["Jamón", "Queso", "Jamón y Queso"],
+      "type": "Jamón Queso",
+      "price": 10.0,
+      "menu": "breakfast"
+    }
+  ]
+}
